@@ -1,0 +1,9 @@
+{
+  "kind": "synthetic",
+  "seed": 441,
+  "license": "CC0-1.0",
+  "description": "Generated demonstration only; no empirical investment evidence.",
+  "price_adjustment": "Synthetic total-return index",
+  "benchmark": "Equal-weight synthetic universe",
+  "generator_version": 1
+}

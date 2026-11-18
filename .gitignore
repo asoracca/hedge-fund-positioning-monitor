@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.env
+.streamlit/secrets.toml
+data/cache/
+data/real/
+*.duckdb*
+.ipynb_checkpoints/
+build/
+*.egg-info/
+
+.runtime/
+outputs/
