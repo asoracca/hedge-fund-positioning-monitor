@@ -13,6 +13,10 @@ jobs:
           python-version: ${{ matrix.python-version }}
           cache: pip
       - run: pip install -e '.[dev]'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node web/verify.mjs
       - run: ruff check .
       - run: python -m crowding.cli demo
       - run: pytest -q

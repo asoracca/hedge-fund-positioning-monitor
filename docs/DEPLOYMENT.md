@@ -68,3 +68,18 @@ The example facts command fetches Apple; only securities mapped to that issuer
 will display that payload. The page validates issuer CIK before displaying facts.
 
 Hosting reference: https://docs.streamlit.io/deploy/streamlit-community-cloud
+
+## Vercel interactive viewer
+
+Import this GitHub repository and set Root Directory to `web`, framework to
+Other, build command to `node verify.mjs`, and output directory to `.`. The
+committed JSON contains Python-computed synthetic snapshots and backtests; the
+build checks disclosure boundaries and agreement between browser and Python
+metrics. No Python server, API key, live data service or paid storage is needed.
+
+The deployed viewer is not the Streamlit server. It exposes six precomputed
+highest-signal presets (ownership change/crowding; 1/5/10 holdings), default
+backtest weights, and the full study window. Explorer weights do not alter
+backtests. Costs are recalculated using the same proportional-cost formula.
+To publish changed research results, run `python scripts/export_web.py`, validate
+with `node web/verify.mjs`, commit the generated assets and push.

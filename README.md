@@ -35,6 +35,15 @@ neither complete portfolios nor current holdings.
 | Company research | Prices, reporting holders and issuer-validated SEC fact vintages when loaded |
 | Data & methodology | Provenance, DuckDB filing summary, availability rules and limitations |
 
+## Hosted web version
+
+The `web/` directory is a Vercel-ready interactive viewer with 24 generated
+disclosure snapshots and six Python-computed backtest presets. It supports
+explorer score weights, manager search, network filtering, cost sensitivity and
+CSV exports. It is separate from the full Streamlit application: arbitrary
+backtests and real-data ingestion still run in Python. Regenerate its assets
+with `python scripts/export_web.py`, then validate with `node web/verify.mjs`.
+
 ## Quick start
 
 Python 3.11 or 3.12 recommended. Run from the repository root:
