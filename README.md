@@ -2,6 +2,8 @@
 
 **A disclosure-aware research terminal for institutional long-equity positioning.**
 
+**[Open the live dashboard →](https://hedge-fund-positioning-monitor.vercel.app)**
+
 Explore reported portfolios, decompose crowded exposures, map manager similarity,
 and test positioning signals using information that was actually public.
 

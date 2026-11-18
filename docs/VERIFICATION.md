@@ -22,3 +22,9 @@
 - All seven web views opened in a browser without a render error; research
   signal/portfolio-size selectors and transaction-cost controls exercised.
 - Initial GitHub Actions run passed both Python-version jobs.
+
+- Production deployment READY in Vercel; public unauthenticated requests to HTML,
+  research JSON and chart-library assets returned HTTP 200.
+- Live overview rendered correctly. Local web browser checks reported no errors.
+- Static deployment has no application server functions; ongoing error monitoring
+  is not configured by this release.

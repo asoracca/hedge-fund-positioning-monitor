@@ -83,3 +83,15 @@ backtest weights, and the full study window. Explorer weights do not alter
 backtests. Costs are recalculated using the same proportional-cost formula.
 To publish changed research results, run `python scripts/export_web.py`, validate
 with `node web/verify.mjs`, commit the generated assets and push.
+
+### Current production deployment
+
+https://hedge-fund-positioning-monitor.vercel.app
+
+Deployed directly with Vercel CLI to the Anggun Hobby team on 2026-11-18.
+Source revision: `51b5a587dddd58282f1ef120e55797024cb66242`. Public HTML,
+research JSON and Plotly assets returned HTTP 200 without authentication.
+The live overview was verified in a browser. The GitHub integration did not
+have access to this repository, so automatic deployments on push are not
+connected. Further releases can use `vercel --prod` from `web/` after linking
+to the existing project, or connect this repository in the Vercel dashboard.
